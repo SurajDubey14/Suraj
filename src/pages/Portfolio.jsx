@@ -37,7 +37,7 @@ const Projects = [
 
 const Portfolio = () => {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {Projects.map((item, index) => (
         <div
           key={index}

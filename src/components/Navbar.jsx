@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
+import { CgMenuRightAlt } from "react-icons/cg";
+
 const Navbar = () => {
   const location = useLocation();
 
@@ -62,6 +64,11 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
+      <div className="ham md:hidden block">
+<CgMenuRightAlt size={22} />
+      </div>
+
+
     </div>
   );
 };

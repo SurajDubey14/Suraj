@@ -65,10 +65,8 @@ const Navbar = () => {
         </nav>
       </div>
       <div className="ham md:hidden block">
-<CgMenuRightAlt size={22} />
+        <CgMenuRightAlt size={22} />
       </div>
-
-
     </div>
   );
 };

@@ -51,7 +51,7 @@ const About = () => {
           transforming complex challenges into elegant, intuitive, and visually
           engaging design solutions.
         </p>
-        <p className="text-lg font-semibold py-2">
+        <p className="text-lg font-semibold py-4 md:py-2">
           My goal is to craft websites that are not only functional and
           user-friendly but also visually appealing. I strive to add a unique
           personal touch to every project, ensuring that the final product is
@@ -64,77 +64,81 @@ const About = () => {
       <div>
         <h1 className="font-bold text-2xl mt-4 py-2">What I'm Doing</h1>
 
-        <div className="grid grid-cols-2 p-4 gap-x-4 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 py-4 md:p-4 gap-x-4 gap-y-10">
           {/* Web Design */}
-          <div className="gap-x-4 border w-[80%] bg-[#171716] shadow-2xl  rounded-2xl flex items-start border-[#3f3d3b] p-4 text-white">
-            <div className="text-yellow-300 text-3xl mr-4">
-              <FaPaintBrush />
+          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+            <div className="flex space-y-2 ">
+              <span className="text-yellow-300  text-xl md:text-2xl mr-2 md:mr-4">
+                <FaPaintBrush />
+              </span>
+              <h2 className="text-sm md:text-lg font-semibold">Web Design</h2>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold">Web Design</h2>
-              <p>
-                Creative, user-focused designs that balance aesthetics and
-                usability to deliver an exceptional user experience.
-              </p>
-            </div>
+            <p className="pt-1">
+              Creative, user-focused designs that balance aesthetics and
+              usability to deliver an exceptional user experience.
+            </p>
           </div>
 
           {/* Web Development */}
-          <div className="gap-x-4 border w-[80%] bg-[#171716] shadow-lg rounded-2xl flex items-start border-[#3f3d3b] p-4 text-white">
-            <div className="text-yellow-300 text-3xl mr-4">
-              <FaLaptopCode />
+          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+            <div className="flex space-y-2 ">
+              <span className="text-yellow-300  text-xl md:text-2xl mr-2 md:mr-4">
+                <FaLaptopCode />
+              </span>
+              <h2 className="text-sm md:text-lg font-semibold">
+                Web Development
+              </h2>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold">Web Development</h2>
-              <p>
-                High-performance, responsive, and secure websites built with
-                modern technologies and clean code practices.
-              </p>
-            </div>
+            <p className="pt-1">
+              High-performance, responsive, and secure websites built with
+              modern technologies and clean code practices.
+            </p>
           </div>
 
           {/* Photography */}
-          <div className="gap-x-4 border w-[80%] bg-[#171716] shadow-lg rounded-2xl flex items-start border-[#3f3d3b] p-4 text-white">
-            <div className="text-yellow-300 text-3xl mr-4">
-              <FaCameraRetro />
+          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+            <div className="flex space-y-2 ">
+              <span className="text-yellow-300  text-xl md:text-2xl mr-2 md:mr-4">
+                <FaCameraRetro />
+              </span>
+              <h2 className="text-sm md:text-lg font-semibold">Photography</h2>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold">Photography</h2>
-              <p className="">
-                Professional photography services capturing stunning visuals
-                that tell compelling stories.
-              </p>
-            </div>
+            <p className="pt-1">
+              ofessional photography services capturing stunning visuals that
+              tell compelling stories.
+            </p>
           </div>
 
           {/* Video Editing */}
-          <div className="gap-x-4 border w-[80%] bg-[#171716] shadow-lg rounded-2xl flex items-start border-[#3f3d3b] p-4 text-white">
-            <div className="text-yellow-300 text-3xl mr-4">
-              <FaVideo />
+          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+            <div className="flex space-y-2 ">
+              <span className="text-yellow-300 text-xl md:text-2xl mr-2 md:mr-4">
+                <FaVideo />
+              </span>
+              <h2 className="text-sm md:text-lg font-semibold">
+                Video Editing
+              </h2>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold">Video Editing</h2>
-              <p>
-                Dynamic and engaging video edits tailored to enhance your brand
-                message and captivate your audience.
-              </p>
-            </div>
+            <p className="pt-1">
+              Dynamic and engaging video edits tailored to enhance your brand
+              message and captivate your audience.
+            </p>
           </div>
         </div>
       </div>
       <div>
         <h1 className="font-bold text-2xl mt-4 py-2">Testimonals</h1>
-        <div className="flex items-start py-20 gap-x-4 gap-y-10">
+        <div className="flex items-start flex-col md:flex-row py-20 gap-x-4 gap-y-20 md:gap-y-10">
           {testimonials.map((item, index) => (
             <div key={index}>
               <div className="bg-[#252423] relative shadow-lg rounded-2xl px-5 pt-14 pb-8">
-                <div className=" absolute bottom-40 w-fit pb-4 flex items-baseline gap-x-4 justify-center ">
+                <div className=" absolute bottom-80 md:bottom-40 w-fit pb-4 flex items-baseline gap-x-4 justify-center ">
                   <div className="bg-[#514b43]  rounded-4xl">
                     <img src={item.image} alt="" className="w-24" />
                   </div>
-                  <p className="text-xl font-bold">{item.name}</p>
+                  <p className="text-lg md:text-xl font-bold">{item.name}</p>
                 </div>
-                <div className="py-4 text-lg font-semibold">
+                <div className="py-4 text-md md:text-lg font-semibold">
                   {item.testimonial}
                 </div>
               </div>

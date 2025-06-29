@@ -6,7 +6,7 @@ const Projects = [
   {
     img: "/images/Clothing.jpg",
     title: "Clothio",
-    development: "Web Development",
+    development: "Clothing Web Platform",
     link: "",
   },
   {
@@ -29,8 +29,8 @@ const Projects = [
   },
   {
     img: "/images/Calculator.jpg",
-    title: "Learnly",
-    development: "EdTech Platform",
+    title: "Calculator",
+    development: "Calculator Website",
     link: "",
   },
 ];

@@ -60,15 +60,15 @@ const LeftPage = () => {
       </div>
 
       <div className="flex text-yellow-300 items-center text-xl gap-4 mt-5 justify-center">
-        <sapn>
+        <span>
           <FaFacebook />
-        </sapn>
-        <sapn>
+        </span>
+        <span>
           <FaInstagram />
-        </sapn>
-        <sapn>
+        </span>
+        <span>
           <FaGithub />
-        </sapn>
+        </span>
       </div>
     </div>
   );

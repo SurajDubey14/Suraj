@@ -8,13 +8,13 @@ import {
 
 const testimonials = [
   {
-    image: "/images/bitemoji.png",
+    image: "/images/testimoalboy.png",
     name: "Rahul Sharma",
     testimonial:
       "Working with this team was a game-changer for our online presence. The website they delivered was not only visually stunning but also incredibly easy to use. Their eye for detail and design sensibility is top-notch. Our customer engagement has grown significantly since the redesign.",
   },
   {
-    image: "/images/bitemoji.png",
+    image: "/images/testimonalgirl.png",
     name: "Priya Menon",
     testimonial:
       "From the first call to final delivery, the entire experience was smooth and professional. Their ability to transform our brand vision into a digital experience exceeded our expectations. The photography and design quality they brought to our project was simply outstanding.",
@@ -132,7 +132,7 @@ const About = () => {
           {testimonials.map((item, index) => (
             <div key={index}>
               <div className="bg-[#252423] relative shadow-lg rounded-2xl px-5 pt-14 pb-8">
-                <div className=" absolute bottom-80 md:bottom-40 w-fit pb-4 flex items-baseline gap-x-4 justify-center ">
+                <div className=" absolute -top-10 md:bottom-40 w-fit pb-4 flex items-baseline gap-x-4 justify-center ">
                   <div className="bg-[#514b43]  rounded-4xl">
                     <img src={item.image} alt="" className="w-24" />
                   </div>

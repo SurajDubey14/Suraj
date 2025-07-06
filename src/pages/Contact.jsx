@@ -1,6 +1,9 @@
 import React from "react";
 import { RiSendPlaneLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   const handleFormSubmit = (e) => {
@@ -19,6 +22,21 @@ const Contact = () => {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <div className="md:hidden block text-center mt-5 ">
+        <h1 className="text-2xl font-semibold font-mono">Socail Media</h1>
+        <div className="md:hidden flex text-yellow-300 items-center text-xl gap-4 mt-2 justify-center">
+          <Link to={"https://www.facebook.com/profile.php?id=100011569590964"}>
+            <FaFacebook />
+          </Link>
+          <Link to={"https://www.instagram.com/surajpandat_01/?hl=en"}>
+            <FaInstagram />
+          </Link>
+          <Link to={"https://github.com/SurajDubey14"}>
+            <FaGithub />
+          </Link>
+        </div>
+      </div>
+
       <div>
         <h1 className="font-bold text-2xl mt-4 py-2">Contact Form</h1>
         <form action="">

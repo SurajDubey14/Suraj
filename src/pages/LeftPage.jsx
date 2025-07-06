@@ -4,6 +4,7 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const LeftPage = () => {
   return (
@@ -60,15 +61,15 @@ const LeftPage = () => {
       </div>
 
       <div className="flex text-yellow-300 items-center text-xl gap-4 mt-5 justify-center">
-        <span>
+        <Link to={"https://www.facebook.com/profile.php?id=100011569590964"}>
           <FaFacebook />
-        </span>
-        <span>
+        </Link>
+        <Link to={"https://www.instagram.com/surajpandat_01/?hl=en"}>
           <FaInstagram />
-        </span>
-        <span>
+        </Link>
+        <Link to={"https://github.com/SurajDubey14"}>
           <FaGithub />
-        </span>
+        </Link>
       </div>
     </div>
   );

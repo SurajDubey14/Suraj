@@ -33,11 +33,11 @@ const Navbar = () => {
         <span className="block h-1 mt-1 w-16 bg-yellow-300"></span>
       </div>
 
-      <div className="flex items-start  md:hidden">
+      <div className="flex items-center  md:hidden">
         <div className="">
           <img src="/images/bitemoji.png" alt="" className="w-16" />
         </div>
-        <div className="text-sm font-semibold mt-2">
+        <div className="text-md font-semibold mt-2">
           <p>Suraj</p>
         </div>
       </div>

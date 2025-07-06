@@ -27,7 +27,7 @@ const Layout = () => {
     }
   };
   return (
-    <div className="lg:flex-row flex-col flex min-h-screen items-start gap-4 md:gap-10 justify-between p-4 md:p-10">
+    <div className="sm:flex-row flex-col flex min-h-screen items-start gap-4 md:gap-10 justify-between p-4 md:p-10">
       <div className="md:block hidden">
         <LeftPage />
       </div>

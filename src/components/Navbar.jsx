@@ -35,9 +35,9 @@ const Navbar = () => {
 
       <div className="flex items-start  md:hidden">
         <div className="">
-          <img src="/images/bitemoji.png" alt="" className="w-8" />
+          <img src="/images/bitemoji.png" alt="" className="w-16" />
         </div>
-        <div className="text-xs font-semibold mt-2">
+        <div className="text-sm font-semibold mt-2">
           <p>Suraj</p>
         </div>
       </div>

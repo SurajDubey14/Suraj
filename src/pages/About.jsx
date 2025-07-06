@@ -45,7 +45,7 @@ const About = () => {
   return (
     <>
       <div>
-        <p className="text-lg font-semibold pt-5">
+        <p className="text-lg font-semibold md:pt-5">
           I'm a Creative Director and UI/UX Designer based in Noida, India,
           specializing in web development and print media. I’m passionate about
           transforming complex challenges into elegant, intuitive, and visually
@@ -132,13 +132,13 @@ const About = () => {
           {testimonials.map((item, index) => (
             <div key={index}>
               <div className="bg-[#252423] relative shadow-lg rounded-2xl px-5 pt-14 pb-8">
-                <div className=" absolute -top-10 md:bottom-40 w-fit pb-4 flex items-baseline gap-x-4 justify-center ">
-                  <div className="bg-[#514b43]  rounded-4xl">
-                    <img src={item.image} alt="" className="w-24" />
+                <div className=" absolute -top-8 md:bottom-40 w-fit md:pb-4 flex items-baseline gap-x-2 md:gap-x-4 justify-center ">
+                  <div className="bg-[#514b43]  rounded-2xl">
+                    <img src={item.image} alt="" className="w-16 md:w-24" />
                   </div>
-                  <p className="text-lg md:text-xl font-bold">{item.name}</p>
+                  <p className="text-sm md:text-xl font-bold">{item.name}</p>
                 </div>
-                <div className="py-4 text-md md:text-lg font-semibold">
+                <div className="py-1 md:py-4 text-sm md:text-lg font-normal md:font-semibold">
                   {item.testimonial}
                 </div>
               </div>

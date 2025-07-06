@@ -26,11 +26,20 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between p-4 relative text-white">
+    <div className="flex items-center justify-between p-2 md:p-4 relative text-white">
       {/* Heading */}
-      <div>
+      <div className="md:block hidden">
         <h1 className="text-2xl font-semibold font-mono">{renderHeading()}</h1>
         <span className="block h-1 mt-1 w-16 bg-yellow-300"></span>
+      </div>
+
+      <div className="flex items-start  md:hidden">
+        <div className="">
+          <img src="/images/bitemoji.png" alt="" className="w-8" />
+        </div>
+        <div className="text-xs font-semibold mt-2">
+          <p>Suraj</p>
+        </div>
       </div>
 
       {/* Desktop Menu */}
@@ -56,6 +65,7 @@ const Navbar = () => {
       <div className="md:hidden cursor-pointer">
         <CgMenuRightAlt size={28} onClick={() => setOpenMenu(true)} />
       </div>
+
 
       {/* Slide-in Mobile Menu */}
       <div

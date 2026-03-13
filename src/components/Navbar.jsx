@@ -16,8 +16,8 @@ const Navbar = () => {
         return "Our Services";
       case "/resume":
         return "Resume";
-      case "/portfolio":
-        return "Portfolio";
+      case "/project":
+        return "Project";
       case "/contact":
         return "Get in Touch";
       default:
@@ -53,8 +53,8 @@ const Navbar = () => {
         <Link to="/services" className="hover:text-yellow-300">
           Services
         </Link>
-        <Link to="/portfolio" className="hover:text-yellow-300">
-          Portfolio
+        <Link to="/project" className="hover:text-yellow-300">
+          Project
         </Link>
         <Link to="/contact" className="hover:text-yellow-300">
           Contact
@@ -104,8 +104,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/portfolio" onClick={() => setOpenMenu(false)}>
-                Portfolio
+              <Link to="/project" onClick={() => setOpenMenu(false)}>
+                Project
               </Link>
             </li>
             <li>

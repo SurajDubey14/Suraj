@@ -11,15 +11,9 @@ const Projects = [
   },
   {
     img: "/images/Grocery.jpg",
-    title: "EcoGrocers",
-    development: "E-Commerce Platform",
-    link: "",
-  },
-  {
-    img: "/images/Portfolio.png",
-    title: "My Portfolio",
-    development: "UI/UX & Web Design",
-    link: "",
+    title: "Taskease",
+    development: "Task Manage Platform",
+    link: "https://taskease-it.vercel.app/",
   },
   {
     img: "/images/NexGen.jpg",
@@ -27,12 +21,7 @@ const Projects = [
     development: "University Website",
     link: "https://nexgenuniversity.vercel.app/",
   },
-  {
-    img: "/images/Calculator.jpg",
-    title: "Calculator",
-    development: "Calculator Website",
-    link: "",
-  },
+  
 ];
 
 const Portfolio = () => {

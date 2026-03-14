@@ -10,7 +10,7 @@ import Layout from "./layout/Layout";
 import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
+import Project from "./pages/Project";
 import Services from "./pages/Services";
 
 
@@ -22,7 +22,7 @@ const AppRoutes = () => {
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/project" element={<Portfolio />} />
+          <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
         </Route>

@@ -45,13 +45,13 @@ const About = () => {
   return (
     <>
       <div>
-        <p className="text-lg font-semibold md:pt-5">
+        <p className="md:pt-5">
           I'm a Creative Director and UI/UX Designer based in Noida, India,
           specializing in web development and print media. I’m passionate about
           transforming complex challenges into elegant, intuitive, and visually
           engaging design solutions.
         </p>
-        <p className="text-lg font-semibold py-4 md:py-2">
+        <p className="py-4 md:py-2">
           My goal is to craft websites that are not only functional and
           user-friendly but also visually appealing. I strive to add a unique
           personal touch to every project, ensuring that the final product is
@@ -66,21 +66,21 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 py-4 md:p-4 gap-x-4 gap-y-10">
           {/* Web Design */}
-          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+          <div className="gap-x-4 border w-full md:w-[90%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
             <div className="flex space-y-2 ">
               <span className="text-yellow-300  text-xl md:text-2xl mr-2 md:mr-4">
                 <FaPaintBrush />
               </span>
               <h2 className="text-sm md:text-lg font-semibold">Web Design</h2>
             </div>
-            <p className="pt-1">
+            <p className="pt-1 text-gray-400">
               Creative, user-focused designs that balance aesthetics and
               usability to deliver an exceptional user experience.
             </p>
           </div>
 
           {/* Web Development */}
-          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+          <div className="gap-x-4 border w-full md:w-[90%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
             <div className="flex space-y-2 ">
               <span className="text-yellow-300  text-xl md:text-2xl mr-2 md:mr-4">
                 <FaLaptopCode />
@@ -89,28 +89,28 @@ const About = () => {
                 Web Development
               </h2>
             </div>
-            <p className="pt-1">
+            <p className="pt-1 text-gray-400">
               High-performance, responsive, and secure websites built with
               modern technologies and clean code practices.
             </p>
           </div>
 
           {/* Photography */}
-          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+          <div className="gap-x-4 border w-full md:w-[90%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
             <div className="flex space-y-2 ">
               <span className="text-yellow-300  text-xl md:text-2xl mr-2 md:mr-4">
                 <FaCameraRetro />
               </span>
               <h2 className="text-sm md:text-lg font-semibold">Photography</h2>
             </div>
-            <p className="pt-1">
+            <p className="pt-1 text-gray-400">
               ofessional photography services capturing stunning visuals that
               tell compelling stories.
             </p>
           </div>
 
           {/* Video Editing */}
-          <div className="gap-x-4 border w-full md:w-[80%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
+          <div className="gap-x-4 border w-full md:w-[90%] bg-[#171716] shadow-2xl  rounded-2xl  text-start border-[#3f3d3b] p-4 text-white">
             <div className="flex space-y-2 ">
               <span className="text-yellow-300 text-xl md:text-2xl mr-2 md:mr-4">
                 <FaVideo />
@@ -119,7 +119,7 @@ const About = () => {
                 Video Editing
               </h2>
             </div>
-            <p className="pt-1">
+            <p className="pt-1 text-gray-400">
               Dynamic and engaging video edits tailored to enhance your brand
               message and captivate your audience.
             </p>
@@ -138,7 +138,7 @@ const About = () => {
                   </div>
                   <p className="text-sm md:text-xl font-bold">{item.name}</p>
                 </div>
-                <div className="py-1 md:py-4 text-sm md:text-lg font-normal md:font-semibold">
+                <div className="text-gray-400 py-1 md:py-4">
                   {item.testimonial}
                 </div>
               </div>

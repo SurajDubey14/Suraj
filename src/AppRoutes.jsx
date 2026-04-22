@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Project from "./pages/Project";
 import Services from "./pages/Services";
+import Message from "./pages/Message";
 
 
 const AppRoutes = () => {
@@ -25,6 +26,7 @@ const AppRoutes = () => {
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/message" element={<Message />} />
         </Route>
       </Routes>
     </Router>

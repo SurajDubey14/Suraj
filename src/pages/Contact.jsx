@@ -7,7 +7,6 @@ import { FaInstagram, FaGithub } from "react-icons/fa";
 import axios from "axios";
 
 const Contact = () => {
-
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const formData = {
@@ -17,7 +16,7 @@ const Contact = () => {
     };
 
     axios
-      .post("http://localhost:3000/contact", formData)
+      .post("https://portfolio-b062b-default-rtdb.firebaseio.com/contact.json", formData)
       .then((res) => {
         toast.success("Form submitted! This is a working demo model for now.");
         e.target.reset();
@@ -33,9 +32,9 @@ const Contact = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d138032.15191441498!2d77.31942469170666!3d28.522327773702926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e1!3m2!1sen!2sin!4v1750702056562!5m2!1sen!2sin"
           className="w-full rounded-md md:rounded-4xl"
           height="450"
-          allowfullscreen=""
+          allowFullScreen
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
       <div className="md:hidden block text-center mt-5 ">

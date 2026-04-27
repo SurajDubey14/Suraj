@@ -5,6 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { TbBrandLinkedinFilled } from "react-icons/tb";
 
 const LeftPage = () => {
   return (
@@ -69,6 +70,9 @@ const LeftPage = () => {
         </Link>
         <Link to={"https://github.com/SurajDubey14"}>
           <FaGithub />
+        </Link>
+        <Link to={"https://www.linkedin.com/in/suraj-dubey-b83b15237/"}>
+          <TbBrandLinkedinFilled />
         </Link>
       </div>
     </div>

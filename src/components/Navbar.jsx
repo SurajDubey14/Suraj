@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { CgMenuRightAlt, CgClose } from "react-icons/cg";
+import { RiCloseFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
         <span className="block h-1 mt-1 w-16 bg-yellow-300"></span>
       </div>
 
-      <div className="flex items-center  md:hidden">
+      <div className="flex items-center md:hidden">
         <div className="">
           <img src="/images/bitemoji.png" alt="" className="w-16" />
         </div>
@@ -66,7 +67,6 @@ const Navbar = () => {
         <CgMenuRightAlt size={28} onClick={() => setOpenMenu(true)} />
       </div>
 
-
       {/* Slide-in Mobile Menu */}
       <div
         className={`fixed top-0 left-0 h-full w-64 bg-[#0E0D0D] text-white transform transition-transform duration-300 ease-in-out z-50 ${
@@ -74,11 +74,13 @@ const Navbar = () => {
         }`}
       >
         {/* Close Icon */}
-        <div className="flex justify-between items-center p-4">
+        <div className="flex justify-between items-center p-6 ">
           <div className="">
-            <img src="/images/bitemoji.png" alt="" className="w-16" />
+            {/* <img src="/images/bitemoji.png" alt="" className="w-16" /> */}
+            <h1 className="font-semibold text-lg">Suraj Dubey</h1>
+            <span className="block h-1 mt-1 w-16 bg-yellow-300"></span>
           </div>
-          <CgClose
+          <RiCloseFill
             size={28}
             className="cursor-pointer font-extrabold"
             onClick={() => setOpenMenu(false)}
